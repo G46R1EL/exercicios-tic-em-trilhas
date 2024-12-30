@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+
+        var a = +prompt("Insira o valor de 'a': ")
+        var b = +prompt("Insira o valor de 'b': ")
+        var c = +prompt("Insira o valor de 'c': ")
+
+        document.write("Valor de 'a': " + a  + '<br>')
+        document.write("Valor de 'b': " + b  + '<br>')
+        document.write("Valor de 'c': " + c  + '<br><br>')
+        
+        if (a + b > c && a + c > b && b + c > a) {
+            document.write('É um triângulo!' + '<br>')
+            if (a == b && b == c) {
+                document.write('É um triângulo Equilátero!' + '<br>')
+            } else if (a != b && b != c && a != c) {
+                document.write('É um triângulo Escaleno!' + '<br>')
+            } else {
+                document.write('É um triângulo Isósceles!' + '<br>')
+            }
+        } else {
+            document.write('Não é um triângulo!' + '<br>')
+        }
+
+    </script>
+
+
+</body>
+</html>

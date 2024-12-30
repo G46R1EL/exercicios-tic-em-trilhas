@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+
+        var a = +prompt("Insira o valor de 'a': ");
+        var b = +prompt("Insira o valor de 'b': ");
+        var c = +prompt("Insira o valor de 'c': ");
+
+        document.write("Valor de 'a': " + a  + '<br>');
+        document.write("Valor de 'b': " + b  + '<br>');
+        document.write("Valor de 'c': " + c  + '<br><br>');
+        
+        if (a == b) {
+            document.write("O valor de 'a' é igual a 'b'" + '<br><br>');
+        } else if (a > b) {
+            document.write("O valor de 'a' é maior que 'b'" + '<br><br>');
+        }
+
+        if ( a >= b) {
+            document.write("O valor de 'a' também é maior OU IGUAL que 'b'" + '<br><br>');
+        }
+
+        if ( c < b) {
+            document.write("O valor de 'c' é menor que 'b'" + '<br><br>');
+        }
+
+        if ( c != b) {
+            document.write("O valor de 'c' é diferente de 'b'" + '<br><br>');
+        } else {
+            document.write("O valor de 'c' é igual de 'b'" + '<br><br>');
+        }
+
+        // Outra forma de fazer
+
+        document.write('Outra forma de fazer: ', '<br>')
+
+        document.write(a , ' = ' , b , '? ' , a == b, '<br>');
+        document.write(a , ' > ' , b , '? ' , a > b, '<br>');
+        document.write(a , ' >= ' , b , '? ' , a >= b, '<br>');
+        document.write(c , ' < ' , b , '? ' , c < b, '<br>');
+        document.write(c , ' != ' , b , '? ' , c != b);
+
+    </script>
+
+</body>
+</html>
